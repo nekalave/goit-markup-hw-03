@@ -13,11 +13,63 @@ body {
 
 ul {
     list-style: none;
+    padding: 0;
+    margin:0 ;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
 }
 
 a {
     text-decoration: none;
 }
+
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+    padding: 24px 0;
+}
+
+.header-nav-main {
+    display: flex;
+    align-items: center;
+
+}
+
+.header-nav-list{
+    display: flex;
+    margin-left: 93px;
+    margin-right: 344px;
+    padding: 0;
+    gap: 50px
+}
+
+
+
+.header-contact-main {
+    display: flex;
+}
+
+.header-contact-main .header-contact-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+
+
 
 .header-logo {
     color: var(--primary-text-color);
@@ -44,30 +96,36 @@ a {
     color: var(--actent-color);
 }
 
-.contact-link-header {
+.header-contact-link {
     color: var(--secundary-text-color);
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
 }
 
-.contact-link-header:hover,
-.contact-link-header:focus {
+.header-contact-link:hover,
+.header-contact-link:focus {
     color: var(--actent-color);
 }
 
-.banner-section {
+.banner{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px 0;
+    text-align: center;
     background-color: #2F303A;
 }
 
+
 .banner-text {
     color: var(--primary-white-color);
-    text-align: center;
     font-size: 44px;
     font-weight: 900;
     line-height: 60px;
     letter-spacing: 2.64px;
     text-transform: uppercase;
+    max-width: 696px;
+    margin: 0 auto 30px;
 }
 
 .banner-button {
@@ -81,6 +139,9 @@ a {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 216px;
+    height: 50px;
+    flex-shrink: 0;
 }
 
 .banner-button:hover,
@@ -88,7 +149,19 @@ a {
     background-color: #188CE8;
 }
 
-.features-title-text {
+.features {
+    padding-bottom: 0;
+}
+.features-list {
+    display: flex;
+    gap: 30px
+}
+
+.features-item {
+    width: 270px;
+}
+
+.features-title {
     font-weight: 700;
     line-height: normal;
     font-size: 14px;
@@ -108,10 +181,31 @@ a {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
+    padding-bottom: 50px;
+}
+
+.work-list {
+    display: flex;
+    gap: 30px
 }
 
 .team-section {
     background-color: #F5F4FA;
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
+.team-wrapper {
+    padding: 30px 0;
+}
+
+.team-item {
+    background-color: var(--primary-white-color);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.20), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
 .team-name {
@@ -120,6 +214,7 @@ a {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.48px;
+    margin-bottom: 10px;
 }
 
 .team-position {
@@ -131,6 +226,7 @@ a {
 }
 
 .footer {
+    padding: 60px 0;
     background-color: #2F303A;;
 }
 
@@ -159,6 +255,16 @@ a {
     color: var(--actent-color);
 }
 
+.footer-address-main{
+    margin-top: 20px;
+}
+
+.footer-address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
 .address-link {
     color: var(--primary-white-color);
     line-height: 24px;
@@ -172,6 +278,13 @@ a {
     color: var(--actent-color);
 }
 
+.filter-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
 .filter-button {
     text-align: center;
     font-size: 16px;
@@ -182,6 +295,7 @@ a {
     background-color: #F5F4FA;
     border-radius: 4px;
     cursor: pointer;
+    height: 38px;
 }
 
 .filter-button:hover,
@@ -190,12 +304,31 @@ a {
     background-color: var(--actent-color);
 }
 
+.projects-list {
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.projects-item {
+    width: 370px;
+    border: 1px solid #EEE;
+    background-color: var(--primary-white-color);
+}
+
 .project-name {
     color: var(--primary-text-color);
     font-size: 18px;
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 1.08px;
+    margin-bottom: 4px;
+}
+
+.project-wrapper {
+    padding: 20px 0 20px 24px;
 }
 
 .project-type {
