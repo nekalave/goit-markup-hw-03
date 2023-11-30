@@ -29,8 +29,6 @@ a {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .header {
@@ -49,9 +47,12 @@ a {
     margin-left: 93px;
     margin-right: 344px;
     padding: 0;
-    gap: 50px
+
 }
 
+.header-nav-list .header-nav-list-item:not(:last-child) {
+    margin-right: 50px;
+}
 
 
 .header-contact-main {
@@ -66,10 +67,6 @@ a {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
-
-
-
 
 .header-logo {
     color: var(--primary-text-color);
@@ -154,11 +151,11 @@ a {
 }
 .features-list {
     display: flex;
-    gap: 30px
 }
 
 .features-item {
     width: 270px;
+    margin-right: 30px;
 }
 
 .features-title {
@@ -186,7 +183,10 @@ a {
 
 .work-list {
     display: flex;
-    gap: 30px
+}
+
+.work-item {
+    margin-right: 30px;
 }
 
 .team-section {
@@ -195,7 +195,6 @@ a {
 
 .team-list {
     display: flex;
-    gap: 30px;
 }
 
 .team-wrapper {
@@ -206,6 +205,7 @@ a {
     background-color: var(--primary-white-color);
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.20), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    margin-right: 30px;
 }
 
 .team-name {
@@ -262,7 +262,10 @@ a {
 .footer-address-list {
     display: flex;
     flex-direction: column;
-    gap: 9px;
+}
+
+.footer-address-item {
+    margin-bottom: 9px;
 }
 
 .address-link {
@@ -280,9 +283,12 @@ a {
 
 .filter-list {
     display: flex;
-    gap: 8px;
     justify-content: center;
     padding-bottom: 50px;
+}
+
+.filter-item {
+    margin-right: 8px;
 }
 
 .filter-button {
@@ -296,6 +302,7 @@ a {
     border-radius: 4px;
     cursor: pointer;
     height: 38px;
+    padding: 6px 22px;
 }
 
 .filter-button:hover,
@@ -308,14 +315,13 @@ a {
     display: flex;
     width: 1200px;
     justify-content: center;
-    gap: 30px;
     flex-wrap: wrap;
 }
 
 .projects-item {
     width: 370px;
     border: 1px solid #EEE;
-    background-color: var(--primary-white-color);
+    margin: 0 30px 30px 0;
 }
 
 .project-name {
@@ -328,7 +334,8 @@ a {
 }
 
 .project-wrapper {
-    padding: 20px 0 20px 24px;
+    padding: 20px 24px;
+    background-color: var(--primary-white-color);
 }
 
 .project-type {
