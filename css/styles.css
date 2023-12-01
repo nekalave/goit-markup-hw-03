@@ -282,7 +282,7 @@ img {
     flex-direction: column;
 }
 
-.footer-address-item {
+.footer-address-list .footer-address-item:not(:last-child) {
     margin-bottom: 9px;
 }
 
