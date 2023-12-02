@@ -153,8 +153,18 @@ img {
     background-color: #188CE8;
 }
 
-.hidden-title {
-    visibility: hidden;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .features {
@@ -331,14 +341,11 @@ img {
 
 .projects-list {
     display: flex;
-    width: 1200px;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
 .projects-item {
     width: 370px;
-    border: 1px solid #EEE;
     margin-bottom:30px;
     margin-right: 30px;
 }
@@ -359,6 +366,8 @@ img {
 .project-wrapper {
     padding: 20px 24px;
     background-color: var(--primary-white-color);
+    border: 1px solid #EEE;
+    border-top: none;
 }
 
 .project-type {
